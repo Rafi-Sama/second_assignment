@@ -19,7 +19,7 @@ body{
     background-color: var(--orange);
 }
 .width{
-    width: 1060px;
+    width: 80%;
     margin: 40px auto;
 }
 header{
