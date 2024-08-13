@@ -206,7 +206,6 @@ backdrop-filter: blur(20px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 45vh;
     padding: 60px;
     border-radius: 20px;
     background-color: var(--gray);
@@ -214,8 +213,8 @@ backdrop-filter: blur(20px);
 }
 
 .imageExtra{
-    width: 35%;
-    height: 140%;
+    width: 25vw;
+    height: 45vh;
     background-image: url(../images/run.jpg);
     background-size:cover;
     background-position:center;
@@ -227,16 +226,22 @@ backdrop-filter: blur(20px);
 .txt>p{
     margin: 30px 0;
 }
-
+.btn{
+    width: 180px;
+}
 @media screen and (max-width: 576px) {
     .extramiles{
         flex-direction: column;
     }
     .imageExtra{
-        height: 50%;
+        margin-top: 25px;
+        height: 25vh;
         width: 100%;
     }
     .txt{
+        width: 100%;
+    }
+    .btn{
         width: 100%;
     }
 }
@@ -315,6 +320,9 @@ position: relative;
     .img{
         width: 100%;
     }
+    .train-txt{
+        width: 100%;
+    }
 }
 
 .bmi-sec{
@@ -373,6 +381,13 @@ input,select{
 @media screen and (max-width: 576px) {
     .bmi-mid{
         flex-direction: column;
+    }
+    .bmi-sec button{
+        width: 45vw;
+        height: 6vh;
+    }
+    .bmi-mid{
+        gap: 25px;
     }
 }
 
